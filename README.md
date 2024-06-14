@@ -7,4 +7,6 @@ File | Description
 --- | ---
 .bashrc | Bash user config file, targeted mainly at Aeon and Distrobox
 nunix.zsh-theme | ZSH theme file. Based on Agnoster theme
-dbox-apps.ini | List of distrobox applications
+libvirt.ini | Libvirt on rootfull distrobox
+vscode.ini | Visual Studio Code on rootless distrobox
+ghdesktop.ini | GitHub Desktop on rootless distrobox
