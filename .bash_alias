@@ -1,0 +1,13 @@
+if [ -z $CONTAINER_ID ]
+then
+	# Alias for user dbox
+	for box in `distrobox list | grep -v NAME | awk '{ print $3 }'`
+	do
+		alias d${box}="distrobox enter ${box}"
+	done
+
+	for box in `distrobox list --root | grep -v NAME | awk '{ print $3 }'`
+	do
+		alias dr${box}="distrobox enter --root ${box}"
+	done
+fi
