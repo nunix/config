@@ -22,17 +22,17 @@ alt + shift + oem_4        : komorebic cycle-focus previous # oem_4 is [
 alt + shift + oem_6        : komorebic cycle-focus next # oem_6 is ]
 
 # Move windows
-alt + shift + left         : komorebic move left
-alt + shift + down         : komorebic move down
-alt + shift + up           : komorebic move up
-alt + shift + right        : komorebic move right
-alt + shift + return    : komorebic promote
+alt + ctrl + left         : komorebic move left
+alt + ctrl + down         : komorebic move down
+alt + ctrl + up           : komorebic move up
+alt + ctrl + right        : komorebic move right
+alt + ctrl + return    : komorebic promote
 
 # Stack windows
-alt + ctrl + left              : komorebic stack left
-alt + ctrl + down              : komorebic stack down
-alt + ctrl + up                : komorebic stack up
-alt + ctrl + right             : komorebic stack right
+alt + shift + left              : komorebic stack left
+alt + shift + down              : komorebic stack down
+alt + shift + up                : komorebic stack up
+alt + shift + right             : komorebic stack right
 alt + oem_1             : komorebic unstack # oem_1 is ;
 alt + oem_4             : komorebic cycle-stack previous # oem_4 is [
 alt + oem_6             : komorebic cycle-stack next # oem_6 is ]
@@ -66,15 +66,17 @@ alt + 7                 : komorebic focus-workspace 6
 alt + 8                 : komorebic focus-workspace 7
 
 # Move windows across workspaces
-alt + shift + 1         : komorebic move-to-workspace 0
-alt + shift + 2         : komorebic move-to-workspace 1
-alt + shift + 3         : komorebic move-to-workspace 2
-alt + shift + 4         : komorebic move-to-workspace 3
-alt + shift + 5         : komorebic move-to-workspace 4
-alt + shift + 6         : komorebic move-to-workspace 5
-alt + shift + 7         : komorebic move-to-workspace 6
-alt + shift + 8         : komorebic move-to-workspace 7
+alt + ctrl + 1         : komorebic move-to-workspace 0
+alt + ctrl + 2         : komorebic move-to-workspace 1
+alt + ctrl + 3         : komorebic move-to-workspace 2
+alt + ctrl + 4         : komorebic move-to-workspace 3
+alt + ctrl + 5         : komorebic move-to-workspace 4
+alt + ctrl + 6         : komorebic move-to-workspace 5
+alt + ctrl + 7         : komorebic move-to-workspace 6
+alt + ctrl + 8         : komorebic move-to-workspace 7
+alt + ctrl + next		: komorebic cycle-move-to-workspace next
+alt + ctrl + prior		: komorebic cycle-move-to-workspace previous
 
 # Cycle between workspaces
-alt + next                      : komorebic cycle-workspace next
-alt + prior                     : komorebic cycle-workspace previous
+alt + next			: komorebic cycle-workspace next
+alt + prior			: komorebic cycle-workspace previous
