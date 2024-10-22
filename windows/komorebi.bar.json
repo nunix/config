@@ -30,6 +30,11 @@
           "hide_empty_workspaces": false
         }
       }
+    },
+    {
+      "Media": {
+        "enable": true
+      }
     }
   ],
   "right_widgets": [

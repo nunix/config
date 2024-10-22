@@ -1,0 +1,47 @@
+= Nunix config files
+
+Finally saving and versioning my config files.
+The title should be self-explanatory, but here is the listing:
+
+|===
+| File | Description | Applicability
+
+| `.bashrc` + `.bash_alias`
+| Bash user config files, targeted mainly at Aeon and Distrobox
+| Bash on Linux OS
+
+| `nunix.zsh-theme`
+| ZSH theme file. Based on Agnoster theme
+| ZSH on Linux OS
+
+| `starship.toml`
+| Starship.rs config file
+| Starship prompt on any OS
+
+3+| Distrobox
+
+| `libvirt.ini`
+| Libvirt on rootfull distrobox
+| Distrobox assemble file
+
+| `vscode.ini`
+| Visual Studio Code on rootless distrobox
+| Distrobox assemble file
+
+| `ghdesktop.ini`
+| GitHub Desktop on rootless distrobox
+| Distrobox assemble file
+
+3+| Windows
+| `komorebi.json`
+| Komorebi config file
+| Komorebi tiling Window Manager on Windows
+
+| `komorebi.bar.json`
+| Komorebi-bar config file
+| Komorebi status bar on Windows
+
+| `whkdrc`
+| Komorebi keyboard config file
+| Komorebi keyboard shortcuts on Windows
+|===
