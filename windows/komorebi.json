@@ -12,6 +12,7 @@
   "theme": {
     "palette": "Base16",
     "name": "Darkviolet",
+    "bar_accent": "Base04",
     "single_border": "Base04",
     "unfocused_border": "Base0E",
     "monocle_border": "Base0D"
@@ -27,7 +28,7 @@
     {
       "workspaces": [
         {
-          "name": "󰨇 COCKPIT",
+          "name": "[1]COCKPIT 󰨇 ",
           "layout": "Grid",
           "initial_workspace_rules": [
             {
@@ -38,7 +39,7 @@
           ]
         },
         {
-          "name": "󰠥 SOCIAL",
+          "name": "[2]SOCIAL 󰠥 ",
           "layout": "Grid",
           "initial_workspace_rules": [
             {
@@ -54,12 +55,12 @@
             {
               "id": "LinkedIn",
               "kind": "Title",
-              "matching_strategy": "Contains"
+              "matching_strategy": "EndsWith"
             }
           ]
         },
         {
-          "name": "󰌓 COMMUNITY",
+          "name": "[3]COMMUNITY 󰌓 ",
           "layout": "Grid",
           "initial_workspace_rules": [
             {
@@ -85,7 +86,7 @@
           ]
         },
         {
-          "name": " SUSE",
+          "name": "[4]SUSE  ",
           "layout": "Grid",
           "initial_workspace_rules": [
             {
@@ -106,7 +107,7 @@
           ]
         },
         {
-          "name": " WRITING",
+          "name": "[5]WRITING  ",
           "layout": "Grid",
           "initial_workspace_rules": [
             {
@@ -122,7 +123,23 @@
           ]
         },
         {
-          "name": " MEDIA",
+          "name": "[6]Learning  ",
+          "layout": "Grid",
+          "initial_workspace_rules": [
+            {
+              "id": "LinkedIn Learning",
+              "kind": "Title",
+              "matching_strategy": "EndsWith"
+            },
+            {
+              "id": "O'Reilly",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            }
+          ]
+        },
+        {
+          "name": "[7]MEDIA  ",
           "layout": "Grid",
           "initial_workspace_rules": [
             {
