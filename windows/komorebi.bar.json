@@ -16,7 +16,7 @@
     }
   },
   "font_family": "3270 Nerd Font",
-  "font_size": 13,
+  "font_size": 16,
   "theme": {
     "palette": "Base16",
     "name": "Darkviolet",
@@ -27,7 +27,7 @@
       "Komorebi": {
         "workspaces": {
           "enable": true,
-          "hide_empty_workspaces": false
+          "hide_empty_workspaces": true
         }
       }
     },
@@ -52,7 +52,7 @@
       "Network": {
         "enable": true,
         "show_total_data_transmitted": false,
-        "show_network_activity": true
+        "show_network_activity": false
       }
     },
     {
