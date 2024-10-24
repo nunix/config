@@ -5,14 +5,16 @@
   "cross_monitor_move_behaviour": "Insert",
   "default_container_padding": 3,
   "border": true,
-  "border_width": 3,
+  "border_width": 5,
   "border_offset": -1,
+  "focus_follows_mouse": "Windows",
   "mouse_follows_focus": true,
   "theme": {
     "palette": "Base16",
-    "name": "Ashes",
-    "single_border": "Base0B",
-    "unfocused_border": "Base0E"
+    "name": "Darkviolet",
+    "single_border": "Base04",
+    "unfocused_border": "Base0E",
+    "monocle_border": "Base0D"
   },
   "stackbar": {
     "height": 20,
@@ -25,40 +27,115 @@
     {
       "workspaces": [
         {
-          "name": "COCKPIT",
-          "layout": "Grid"
+          "name": "󰨇 COCKPIT",
+          "layout": "Grid",
+          "initial_workspace_rules": [
+            {
+              "id": "WindowsTerminal",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            }
+          ]
         },
         {
-          "name": "SOCIAL",
-          "layout": "Grid"
+          "name": "󰠥 SOCIAL",
+          "layout": "Grid",
+          "initial_workspace_rules": [
+            {
+              "id": "X",
+              "kind": "Title",
+              "matching_strategy": "Equals"
+            },
+            {
+              "id": "Bluesky",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            },
+            {
+              "id": "LinkedIn",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            }
+          ]
         },
         {
-          "name": "SUSE",
-          "layout": "Grid"
+          "name": "󰌓 COMMUNITY",
+          "layout": "Grid",
+          "initial_workspace_rules": [
+            {
+              "id": "Discord",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            },
+            {
+              "id": "WhatsApp",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            },
+            {
+              "id": "Telegram",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            },
+            {
+              "id": "Microsoft Teams",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            }
+          ]
         },
         {
-          "name": "WRITING",
-          "layout": "Grid"
+          "name": " SUSE",
+          "layout": "Grid",
+          "initial_workspace_rules": [
+            {
+              "id": "Slack",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            },
+            {
+              "id": "Gmail",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            },
+            {
+              "id": "Google Calendar",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            }
+          ]
         },
         {
-          "name": "V",
-          "layout": "Grid"
+          "name": " WRITING",
+          "layout": "Grid",
+          "initial_workspace_rules": [
+            {
+              "id": "GitHub Desktop",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            },
+            {
+              "id": "Visual Studio Code",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            }
+          ]
         },
         {
-          "name": "VI",
-          "layout": "Grid"
-        },
-        {
-          "name": "VII",
-          "layout": "Grid"
-        },
-        {
-          "name": "VIII",
-          "layout": "Grid"
-        },
-        {
-          "name": "IX",
-          "layout": "Grid"
+          "name": " MEDIA",
+          "layout": "Grid",
+          "initial_workspace_rules": [
+            {
+              "id": "YouTube",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            },
+            {
+              "id": "Spotify",
+              "kind": "Title",
+              "matching_strategy": "Contains"
+            }
+          ]
         }
       ]
     }
