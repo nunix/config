@@ -84,3 +84,4 @@ alt + ctrl + prior		: komorebic cycle-move-to-workspace previous
 # Cycle between workspaces
 alt + next			: komorebic cycle-workspace next
 alt + prior			: komorebic cycle-workspace previous
+alt + oem_3			: komorebic focus-last-workspace # oem_3 is `
