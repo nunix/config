@@ -1,6 +1,6 @@
 {
-  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.29/schema.json",
-  "app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME/applications.yaml",
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.30/schema.json",
+  "app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME/applications.json",
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
   "default_container_padding": 3,
@@ -41,21 +41,21 @@
         {
           "name": "[2]SOCIAL 󰠥 ",
           "layout": "Grid",
-          "initial_workspace_rules": [
+          "workspace_rules": [
             {
               "id": "X",
               "kind": "Title",
-              "matching_strategy": "Equals"
+              "matching_strategy": "StartsWith"
             },
             {
               "id": "Bluesky",
               "kind": "Title",
-              "matching_strategy": "Contains"
+              "matching_strategy": "StartsWith"
             },
             {
               "id": "LinkedIn",
               "kind": "Title",
-              "matching_strategy": "EndsWith"
+              "matching_strategy": "StartsWith"
             }
           ]
         },
@@ -66,22 +66,22 @@
             {
               "id": "Discord",
               "kind": "Title",
-              "matching_strategy": "Contains"
+              "matching_strategy": "StartsWith"
             },
             {
               "id": "WhatsApp",
               "kind": "Title",
-              "matching_strategy": "Contains"
+              "matching_strategy": "StartsWith"
             },
             {
               "id": "Telegram",
               "kind": "Title",
-              "matching_strategy": "Contains"
+              "matching_strategy": "StartsWith"
             },
             {
               "id": "Microsoft Teams",
               "kind": "Title",
-              "matching_strategy": "Contains"
+              "matching_strategy": "StartsWith"
             }
           ]
         },
@@ -90,19 +90,18 @@
           "layout": "Grid",
           "initial_workspace_rules": [
             {
-              "id": "Slack",
-              "kind": "Title",
-              "matching_strategy": "Contains"
+              "id": "Slack.exe",
+              "kind": "Exe"
             },
             {
               "id": "Gmail",
               "kind": "Title",
-              "matching_strategy": "Contains"
+              "matching_strategy": "StartsWith"
             },
             {
               "id": "Google Calendar",
               "kind": "Title",
-              "matching_strategy": "Contains"
+              "matching_strategy": "StartsWith"
             }
           ]
         },
@@ -113,12 +112,11 @@
             {
               "id": "GitHub Desktop",
               "kind": "Title",
-              "matching_strategy": "Contains"
+              "matching_strategy": "StartsWith"
             },
             {
-              "id": "Visual Studio Code",
-              "kind": "Title",
-              "matching_strategy": "Contains"
+              "id": "Code.exe",
+              "kind": "Exe"
             }
           ]
         },
@@ -129,12 +127,12 @@
             {
               "id": "LinkedIn Learning",
               "kind": "Title",
-              "matching_strategy": "EndsWith"
+              "matching_strategy": "StartsWith"
             },
             {
               "id": "O'Reilly",
               "kind": "Title",
-              "matching_strategy": "Contains"
+              "matching_strategy": "StartsWith"
             }
           ]
         },
@@ -145,12 +143,12 @@
             {
               "id": "YouTube",
               "kind": "Title",
-              "matching_strategy": "Contains"
+              "matching_strategy": "StartsWith"
             },
             {
               "id": "Spotify",
               "kind": "Title",
-              "matching_strategy": "Contains"
+              "matching_strategy": "StartsWith"
             }
           ]
         }
