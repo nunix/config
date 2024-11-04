@@ -1,18 +1,22 @@
 {
-  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.29/schema.bar.json",
-  "viewport": {
-    "inner_size": {
-      "x": 2560,
-      "y": 15
-    }
-  },
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.30/schema.bar.json",
   "monitor": {
     "index": 0,
     "work_area_offset": {
       "left": 0,
       "top": 25,
       "right": 0,
-      "bottom": 15
+      "bottom": 25
+    }
+  },
+  "position": {
+    "start": {
+      "x": 0,
+      "y": 0
+    },
+    "end": {
+      "x": 2560,
+      "y": 35
     }
   },
   "font_family": "3270 Nerd Font",
@@ -28,6 +32,9 @@
         "workspaces": {
           "enable": true,
           "hide_empty_workspaces": true
+        },
+        "layout": {
+          "enable": true
         }
       }
     },
@@ -40,6 +47,11 @@
   "right_widgets": [
     {
       "Storage": {
+        "enable": true
+      }
+    },
+    {
+      "Cpu": {
         "enable": true
       }
     },
