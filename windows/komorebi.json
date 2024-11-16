@@ -53,6 +53,11 @@
               "matching_strategy": "StartsWith"
             },
             {
+              "id": "Hachyderm.io",
+              "kind": "Title",
+              "matching_strategy": "StartsWith"
+            },
+            {
               "id": "LinkedIn",
               "kind": "Title",
               "matching_strategy": "StartsWith"
