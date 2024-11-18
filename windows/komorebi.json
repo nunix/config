@@ -67,11 +67,10 @@
         {
           "name": "[3]COMMUNITY 󰌓 ",
           "layout": "Grid",
-          "initial_workspace_rules": [
+          "workspace_rules": [
             {
-              "id": "Discord",
-              "kind": "Title",
-              "matching_strategy": "StartsWith"
+              "id": "Discord.exe",
+              "kind": "Exe"
             },
             {
               "id": "WhatsApp",
@@ -93,7 +92,7 @@
         {
           "name": "[4]SUSE  ",
           "layout": "Grid",
-          "initial_workspace_rules": [
+          "workspace_rules": [
             {
               "id": "Slack.exe",
               "kind": "Exe"
@@ -128,12 +127,7 @@
         {
           "name": "[6]Learning  ",
           "layout": "Grid",
-          "initial_workspace_rules": [
-            {
-              "id": "LinkedIn Learning",
-              "kind": "Title",
-              "matching_strategy": "StartsWith"
-            },
+          "workspace_rules": [
             {
               "id": "O'Reilly",
               "kind": "Title",
@@ -143,6 +137,22 @@
         },
         {
           "name": "[7]MEDIA  ",
+          "layout": "Grid",
+          "initial_workspace_rules": [
+            {
+              "id": "YouTube",
+              "kind": "Title",
+              "matching_strategy": "StartsWith"
+            },
+            {
+              "id": "Spotify",
+              "kind": "Title",
+              "matching_strategy": "StartsWith"
+            }
+          ]
+        },
+        {
+          "name": "[8]AI  ",
           "layout": "Grid",
           "initial_workspace_rules": [
             {
