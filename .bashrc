@@ -6,7 +6,7 @@ IFS=$'\n'
 if [ -z $CONTAINER_ID ]
 then
         source $HOME/.bash_alias
-        function getApps {
+        function dapps {
                 # USER header
                 printf "USER\n========\n\n"
 
@@ -17,6 +17,16 @@ then
                         # dbox header
                         printf "📦  [ $box ]\n"
                         echo "---------------------"
+
+                        # Get box current status
+                        dboxStatus=`podman inspect ${box} --format '{{ .State.Status }}'`
+
+                        # Start the container if it's not running
+                        if [ ! "$dboxStatus" == "running" ]
+                        then
+                                podman start ${box} &> /dev/null
+                                wait $!
+                        fi
 
                         # Get all applications running in dbox
                         dboxApps=`distrobox enter ${box} -- distrobox-export --list-apps | awk -F"|" '{ print $1 }'`
@@ -30,6 +40,12 @@ then
                         do
                                 printf "📄\t${bin}\n"
                         done
+
+                        # Stops the container is the status was not running
+                        if [ ! "$dboxStatus" == "running" ]
+                        then
+                                distrobox stop ${box} &> /dev/null
+                        fi
 
                         echo
                 done
