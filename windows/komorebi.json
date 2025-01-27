@@ -3,12 +3,9 @@
   "app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME/applications.json",
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
-  "default_container_padding": 3,
+  "default_workspace_padding": 1,
   "border": true,
   "border_width": 5,
-  "border_offset": -1,
-  "focus_follows_mouse": "Windows",
-  "mouse_follows_focus": true,
   "theme": {
     "palette": "Base16",
     "name": "Darkviolet",
@@ -17,18 +14,11 @@
     "unfocused_border": "Base0E",
     "monocle_border": "Base0D"
   },
-  "stackbar": {
-    "height": 20,
-    "mode": "OnStack",
-    "tabs": {
-      "width": 300
-    }
-  },
   "monitors": [
     {
       "workspaces": [
         {
-          "name": "[1]COCKPIT 󰨇 ",
+          "name": "[1]COCKPIT ≤░¿ç ",
           "layout": "Grid",
           "initial_workspace_rules": [
             {
@@ -39,9 +29,9 @@
           ]
         },
         {
-          "name": "[2]SOCIAL 󰠥 ",
+          "name": "[2]SOCIAL ≤░áÑ ",
           "layout": "Grid",
-          "workspace_rules": [
+          "initial_workspace_rules": [
             {
               "id": "X",
               "kind": "Title",
@@ -65,9 +55,9 @@
           ]
         },
         {
-          "name": "[3]COMMUNITY 󰌓 ",
+          "name": "[3]COMMUNITY ≤░îô ",
           "layout": "Grid",
-          "workspace_rules": [
+          "initial_workspace_rules": [
             {
               "id": "Discord.exe",
               "kind": "Exe"
@@ -90,9 +80,9 @@
           ]
         },
         {
-          "name": "[4]SUSE  ",
+          "name": "[4]SUSE ε╜¡ ",
           "layout": "Grid",
-          "workspace_rules": [
+          "initial_workspace_rules": [
             {
               "id": "Slack.exe",
               "kind": "Exe"
@@ -106,11 +96,16 @@
               "id": "Google Calendar",
               "kind": "Title",
               "matching_strategy": "StartsWith"
+            },
+            {
+              "id": "Google Drive",
+              "kind": "Title",
+              "matching_strategy": "StartsWith"
             }
           ]
         },
         {
-          "name": "[5]WRITING  ",
+          "name": "[5]WRITING ∩üä ",
           "layout": "Grid",
           "initial_workspace_rules": [
             {
@@ -125,9 +120,9 @@
           ]
         },
         {
-          "name": "[6]Learning  ",
+          "name": "[6]Learning ε¬ñ ",
           "layout": "Grid",
-          "workspace_rules": [
+          "initial_workspace_rules": [
             {
               "id": "O'Reilly",
               "kind": "Title",
@@ -136,7 +131,7 @@
           ]
         },
         {
-          "name": "[7]MEDIA  ",
+          "name": "[7]MEDIA ∩ö¼ ",
           "layout": "Grid",
           "initial_workspace_rules": [
             {
@@ -152,16 +147,16 @@
           ]
         },
         {
-          "name": "[8]AI  ",
+          "name": "[8]AI ε╕ì ",
           "layout": "Grid",
           "initial_workspace_rules": [
             {
-              "id": "YouTube",
+              "id": "Copilot",
               "kind": "Title",
               "matching_strategy": "StartsWith"
             },
             {
-              "id": "Spotify",
+              "id": "Gemini",
               "kind": "Title",
               "matching_strategy": "StartsWith"
             }
