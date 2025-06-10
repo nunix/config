@@ -7,7 +7,7 @@ alt + shift + o         : komorebic reload-configuration
 
 # Apps shortcut
 alt + return			: wt
-alt + k					: komorebic stop --whkd --bar; komorebic start --whkd --bar --ffm
+alt + k					: komorebic stop --whkd --bar; komorebic start --whkd --bar
 
 # App shortcuts - these require shell to be pwsh / powershell
 # The apps will be focused if open, or launched if not open
@@ -80,6 +80,10 @@ alt + ctrl + 7         : komorebic move-to-workspace 6
 alt + ctrl + 8         : komorebic move-to-workspace 7
 alt + ctrl + next		: komorebic cycle-move-to-workspace next
 alt + ctrl + prior		: komorebic cycle-move-to-workspace previous
+
+# Move windows accross screens
+alt + ctrl + shift + right     : komorebic cycle-move-to-monitor next
+alt + ctrl + shift + left     : komorebic cycle-move-to-monitor previous
 
 # Cycle between workspaces
 alt + next			: komorebic cycle-workspace next
