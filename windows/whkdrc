@@ -84,6 +84,10 @@ alt + ctrl + prior		: komorebic cycle-move-to-workspace previous
 # Move windows accross screens
 alt + ctrl + shift + right     : komorebic cycle-move-to-monitor next
 alt + ctrl + shift + left     : komorebic cycle-move-to-monitor previous
+alt + ctrl + shift + 1        : komorebic move-to-monitor 0
+alt + ctrl + shift + 2        : komorebic move-to-monitor 1
+alt + ctrl + shift + 3        : komorebic move-to-monitor 2
+alt + ctrl + shift + 4        : komorebic move-to-monitor 3
 
 # Cycle between workspaces
 alt + next			: komorebic cycle-workspace next
