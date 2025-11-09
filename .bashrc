@@ -66,15 +66,3 @@ else
         alias dexa="distrobox-export -a"
         alias dexb="distrobox-export -b"
 fi
-
-# Rust
-. "$HOME/.cargo/env"
-
-# Yarn + Node
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-# Starship
-eval "$(starship init bash)"
-
-# Random number
-function swisschoco { echo $((1 + $RANDOM % $1)); }
