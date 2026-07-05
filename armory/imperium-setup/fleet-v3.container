@@ -1,0 +1,18 @@
+[Unit]
+Description=fleet-v3 command center (prod)
+
+[Container]
+Image=localhost/fleet-v3:prod
+ContainerName=fleet-v3
+AutoUpdate=registry
+Environment=DATABASE_URL=postgresql://[DB_USER]:[DB_PASSWORD]@[DB_HOST]/[DB_NAME]?sslmode=disable
+# Network=host: container shares host network namespace so loopback-mapped hostname
+# imperator.fleet.local (→127.0.0.1 in /etc/hosts) correctly resolves to host's Postgres.
+# Bridge networks have their own loopback; 127.0.0.1 would point at container itself, not host.
+Network=host
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target

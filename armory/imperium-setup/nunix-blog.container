@@ -1,0 +1,14 @@
+[Unit]
+Description=nunix-blog Docusaurus site (prod)
+
+[Container]
+Image=localhost/nunix-blog:prod
+ContainerName=nunix-blog
+PublishPort=3000:3000
+AutoUpdate=registry
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target

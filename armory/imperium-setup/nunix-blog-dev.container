@@ -1,0 +1,15 @@
+[Unit]
+Description=nunix-blog Docusaurus site (dev, hot reload from host source)
+
+[Container]
+Image=localhost/nunix-blog:dev
+ContainerName=nunix-blog-dev
+Volume=[YOUR_BLOG_REPO_PATH]:/app:Z
+Volume=blog-node-modules:/app/node_modules
+PublishPort=3000:3000
+
+[Service]
+Restart=always
+
+[Install]
+WantedBy=default.target
